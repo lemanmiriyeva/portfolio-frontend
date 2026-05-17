@@ -490,6 +490,18 @@ export default function HomePage() {
           </span>
         </div>
         <div style={{ display: 'flex', gap: 8 }}>
+          <Link
+  href="/profile"
+  style={{
+    display: 'inline-flex', alignItems: 'center', gap: 5,
+    padding: '7px 13px', borderRadius: 8,
+    border: '0.5px solid rgba(0,0,0,0.1)',
+    background: '#fff', color: '#5F5E5A',
+    fontSize: 12, textDecoration: 'none',
+  }}
+>
+  Profil
+</Link>
           {profile?.email && (
             <a
               href={`mailto:${profile.email}`}

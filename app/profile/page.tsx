@@ -492,7 +492,7 @@ export default function ProfilePage() {
                   label="İl təcrübə"
                   value={profile?.years_experience ?? '—'}
                 />
-                <StatPill
+                {/* <StatPill
                   icon={<Code2 size={16} />}
                   label="Tamamlanan layihə"
                   value={projects.length > 0 ? `${projects.length}+` : '—'}
@@ -501,7 +501,7 @@ export default function ProfilePage() {
                   icon={<Star size={16} />}
                   label="Featured layihə"
                   value={projects.filter(p => p.is_featured).length || '—'}
-                />
+                /> */}
               </>
             )}
           </div>
