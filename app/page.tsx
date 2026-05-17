@@ -224,7 +224,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </div>
           )}
 
-          {project.is_featured && (
+          {/* {project.is_featured && (
             <div style={{
               position: 'absolute', top: 10, right: 10,
               background: '#FAEEDA', border: '0.5px solid #FAC77544',
@@ -235,7 +235,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               <Star size={10} fill="#854F0B" />
               Featured
             </div>
-          )}
+          )} */}
 
           <div style={{
             position: 'absolute', inset: 0,
@@ -615,7 +615,7 @@ export default function HomePage() {
         </section>
 
         {/* ── STATS ── */}
-        <section style={{
+        {/* <section style={{
           display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)',
           gap: 12, marginBottom: 52,
           opacity: statsVisible ? 1 : 0,
@@ -626,7 +626,7 @@ export default function HomePage() {
           <StatCard value={stats.active}   label="Aktiv"          icon={<Globe size={17} />} />
           <StatCard value={stats.featured} label="Featured"       icon={<Star size={17} />} />
           <StatCard value={stats.tech}     label="Texnologiya"    icon={<Code2 size={17} />} />
-        </section>
+        </section> */}
 
         {/* ── FILTERS ── */}
         <section style={{ marginBottom: 36 }}>
