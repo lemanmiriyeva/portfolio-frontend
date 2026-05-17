@@ -4,18 +4,16 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'portfolio-backend.onrender.com',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
       },
       {
         protocol: 'https',
-        hostname: '**',
+        hostname: 'portfolio-backend-2j38.onrender.com',
+        pathname: '/**',
       },
-      
     ],
   },
-  env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000',
-  },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
